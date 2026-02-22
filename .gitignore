@@ -1,0 +1,56 @@
+# Build directories
+build/
+build-*/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Qt
+*.autosave
+*.user
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# Android
+android/.gradle/
+android/build/
+android/local.properties
+android/.idea/
+android/*.iml
+android/captures/
+android/.externalNativeBuild/
+android/app/release/
+
+# Node/Web
+web/node_modules/
+web/dist/
+web/.env.local
+web/package-lock.json
+web/yarn.lock
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
