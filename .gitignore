@@ -1,6 +1,7 @@
 # Build directories
 build/
 build-*/
+builddir/
 *.o
 *.obj
 *.exe
@@ -10,26 +11,34 @@ build-*/
 *.a
 *.lib
 
-# IDE files
-.vscode/
+# IDE files (keep VSCode config)
+.vscode/*
+!.vscode/c_cpp_properties.json
+!.vscode/settings.json
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+*.code-workspace
 
 # CMake
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
+CMakeScripts/
+compile_commands.json
 
 # Qt
 *.autosave
 *.user
+*.user.*
 moc_*.cpp
+moc_*.h
 ui_*.h
 qrc_*.cpp
+*.qmlc
 
 # Android
 android/.gradle/
@@ -39,18 +48,49 @@ android/.idea/
 android/*.iml
 android/captures/
 android/.externalNativeBuild/
+android/.cxx/
 android/app/release/
+android/app/debug/
+*.apk
+*.aab
+
+# iOS/macOS
+ios/build/
+ios/DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
 
 # Node/Web
 web/node_modules/
 web/dist/
 web/.env.local
+web/.env.*.local
 web/package-lock.json
 web/yarn.lock
 
-# Logs
+# Logs and temp files
 *.log
-
-# Temporary files
 *.tmp
 *.temp
+.cache/
+
+# Test coverage
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# Meson (Linux build)
+linux/builddir/
+.ninja_deps
+.ninja_log

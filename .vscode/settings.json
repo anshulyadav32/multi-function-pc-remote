@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.h": "c",
+    "*.c": "c",
+    "*.cpp": "cpp",
+    "*.hpp": "cpp",
+    "*.swift": "swift",
+    "*.kt": "kotlin",
+    "*.vue": "vue"
+  },
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.intelliSenseEngine": "disabled"
+}

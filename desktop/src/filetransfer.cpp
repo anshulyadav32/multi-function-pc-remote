@@ -4,6 +4,7 @@
 #include "filetransfer.h"
 #include <QFile>
 #include <QFileInfo>
+#include <QDir>
 #include <QJsonDocument>
 #include <QWebSocket>
 #include <QDebug>
