@@ -1,6 +1,6 @@
 # Multi-Function PC Remote
 
-A comprehensive remote control solution for PCs with desktop, Android, and web interfaces.
+A comprehensive remote control solution for PCs with desktop, Android, iOS, and web interfaces.
 
 ## Features
 
@@ -17,6 +17,12 @@ Cross-platform desktop server application that runs on Windows, Linux, and macOS
 
 ### Android Application
 Native Android app for controlling your PC from your phone or tablet.
+
+### iOS Application
+Native iOS app built with SwiftUI for iPhone and iPad.
+
+### Linux Client (GTK4)
+Native Linux client application with GNOME/GTK4 integration.
 
 ### Web Application
 Browser-based remote control accessible from any device.
@@ -35,6 +41,17 @@ cmake --build .
 ```bash
 cd android
 ./gradlew assembleDebug
+```
+
+### iOS Application
+Open `ios/PCRemote.xcodeproj` in Xcode and build.
+
+### Linux Client
+```bash
+cd linux
+meson setup builddir
+meson compile -C builddir
+sudo meson install -C builddir
 ```
 
 ### Web Application

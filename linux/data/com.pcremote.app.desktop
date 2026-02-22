@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PC Remote
+Comment=Remote control your PC
+Icon=computer
+Exec=pcremote
+Terminal=false
+Categories=Network;RemoteAccess;
+Keywords=remote;control;pc;
